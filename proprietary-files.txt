@@ -121,7 +121,6 @@ vendor/lib64/libxlog.so
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
