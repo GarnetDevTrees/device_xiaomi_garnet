@@ -54,6 +54,10 @@ ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
 # Silence minksocket logs
 persist.log.tag.minksocket=S
 
