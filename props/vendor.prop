@@ -219,6 +219,9 @@ ro.vendor.sensors.xiaomi.udfps=true
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
