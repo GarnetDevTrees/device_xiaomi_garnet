@@ -213,6 +213,7 @@ dalvik.vm.dex2oat64.enabled=true
 persist.vendor.rcs.singlereg.feature=1
 
 # Sensors
+persist.vendor.sensors.debug.hal=0
 ro.vendor.sensors.xiaomi.udfps=true
 
 # SSR
