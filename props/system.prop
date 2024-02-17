@@ -30,6 +30,10 @@ ro.mot.eri.losalert.delay=100
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
 
+# Fling velocities
+ro.min.fling_velocity=70
+ro.max.fling_velocity=21000
+
 # Ram Management
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
