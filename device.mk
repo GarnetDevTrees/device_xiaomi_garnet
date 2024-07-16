@@ -405,10 +405,6 @@ PRODUCT_PACKAGES += \
     WifiOverlayGarnetRedmiCN \
     WifiOverlayGarnetXIG05
 
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
@@ -553,6 +549,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+	
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \

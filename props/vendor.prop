@@ -174,6 +174,9 @@ ro.vendor.nfc.debounce_field_on=1
 # PASR
 vendor.pasr.activemode.enabled=false
 
+# DisplayFeature
+persist.sys.sf.native_mode=256
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 

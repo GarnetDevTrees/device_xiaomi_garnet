@@ -5,9 +5,6 @@ type smartpa_type, fs_type, sysfs_type;
 # Batterysecret
 type vendor_sysfs_qcom_battery, fs_type, sysfs_type;
 
-# Displayfeature
-type vendor_sysfs_displayfeature, fs_type, sysfs_type;
-
 # Fingerprint
 type sysfs_tp_fodstatus, fs_type, sysfs_type;
 type vendor_fingerprint_data_file, data_file_type, file_type;
@@ -20,3 +17,11 @@ type thermal_data_file, data_file_type, file_type;
 
 # Wifi
 type vendor_mac_vendor_data_file, data_file_type, file_type, mlstrustedobject;
+
+# XiaomiParts
+type vendor_hal_displayfeature_xiaomi_service, fs_type, sysfs_type;
+type vendor_hal_displayfeature_xiaomi_default, fs_type, sysfs_type;
+type vendor_sysfs_thermal, data_file_type, sysfs_type; 
+type sysfs_therm, fs_type, sysfs_type;
+type vendor_sysfs_displayfeature, fs_type, sysfs_type;
+type xiaomi_display, domain;
