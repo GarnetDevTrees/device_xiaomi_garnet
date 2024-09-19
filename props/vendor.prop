@@ -102,12 +102,17 @@ vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=1
 vendor.display.disable_sdr_histogram=1
 vendor.display.disable_stc_dimming=1
-vendor.display.enable_async_powermode=0
+vendor.display.enable_async_powermode=1
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_dpps_dynamic_fps=0
 vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=0
 vendor.display.idle_time=0
+vendor.display.use_smooth_motion=1
+vendor.display.enable_camera_smooth=1
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_hdr=1
 vendor.display.vds_allow_hwc=0
 
 # DPM
@@ -129,7 +134,7 @@ persist.sys.fuse.passthrough.enable=true
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.sf.auto_latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.early.app.duration=16500000
 debug.sf.early.sf.duration=16000000
@@ -142,7 +147,7 @@ debug.sf.late.app.duration=20500000
 debug.sf.late.sf.duration=10500000
 debug.sf.enable_egl_image_tracker=1
 debug.sf.predict_hwc_composition_strategy=0
-debug.sf.set_idle_timer_ms=1100
+debug.sf.set_idle_timer_ms=3000
 debug.sf.treat_170m_as_sRGB=1
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.defer_refresh_rate_when_off=1
