@@ -33,6 +33,10 @@ ro.mot.eri.losalert.delay=100
 ro.vold.umsdirtyratio=20
 power.saving.mode=1
 
+# Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1s
+
 # Fling velocities
 ro.min.fling_velocity=70
 ro.max.fling_velocity=21000
