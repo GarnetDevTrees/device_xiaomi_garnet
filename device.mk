@@ -25,6 +25,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 # Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Platform
+TARGET_BOARD_PLATFORM := parrot
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
