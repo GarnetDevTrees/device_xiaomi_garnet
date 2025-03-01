@@ -201,6 +201,7 @@ persist.sys.sf.native_mode=256
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
+vendor.perf.framepacing.enable=1
 
 # Radio
 persist.radio.multisim.config=dsds
