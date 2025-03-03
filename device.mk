@@ -424,6 +424,11 @@ PRODUCT_PACKAGES += \
     WifiOverlayGarnetRedmiCN \
     WifiOverlayGarnetXIG05
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts \
+    XiaomiVoIPFix
+	
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
