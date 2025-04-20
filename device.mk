@@ -192,13 +192,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
-# Dolby VNDK libs
-PRODUCT_PACKAGES += \
-    libstagefright_foundation-v33
-
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
