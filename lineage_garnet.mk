@@ -10,17 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 TARGET_SUPPORTS_OMX_SERVICE := false
 
-# Inherit some common BlKi stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# BLKI
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-BLACKIRON_BUILDTYPE := UNOFFICIAL
-BLACKIRON_MAINTAINER := JYR_RC
-WITH_GMS := true
-#WITH_GMS_VARIANT := pico
+# LineageOS Flags
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Reduce overdraw debugging to improve performance
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -31,14 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.force_vulkan=1 \
     debug.hwui.renderer=skiagl
 
-# Ensures smoother rendering by turning off unnecessary GPU debugging
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.show_overdraw=false
-
 # Reduces input lag and smoothens animations
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.use_triple_buffering=true \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+    debug.hwui.use_triple_buffering=true
 
 # Disable scrolling cache for smoother scrolling
 persist.sys.scrollingcache=3
