@@ -10,9 +10,6 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 # Inherit Basic Call Recorder (BCR)
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
