@@ -1,0 +1,7 @@
+#ADB
+service.adb.root=1
+ro.adb.secure=0
+ro.debuggabl=1
+ro.force.debuggable=1
+persist.sys.usb.config=adb
+sys.usb.config=adb
