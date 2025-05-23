@@ -20,7 +20,6 @@ CUSTOM_MAINTAINER := senseideveloper
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-WITH_GMS := true
 
 # Reduce overdraw debugging to improve performance
 PRODUCT_PROPERTY_OVERRIDES += \
