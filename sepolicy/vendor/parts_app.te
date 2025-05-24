@@ -8,3 +8,4 @@ allow parts_app vendor_hal_displayfeature_xiaomi_service:service_manager { find 
 allow parts_app vendor_hal_displayfeature_xiaomi_service:binder { call transfer };
 allow parts_app vendor_hal_displayfeature_xiaomi_default:service_manager { find };
 allow parts_app vendor_hal_displayfeature_xiaomi_default:binder { call transfer };
+dontaudit parts_app default_prop:file { read };
