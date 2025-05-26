@@ -77,8 +77,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/hidl/manifest.xml \
@@ -114,8 +113,8 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    bootinfo.fingerprint=$(AOSP_VERSION) \
-    swinfo.fingerprint=$(AOSP_VERSION)
+    bootinfo.fingerprint=$(VOLTAGE_VERSION) \
+    swinfo.fingerprint=$(VOLTAGE_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -150,10 +149,12 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Partitions
 
+-include vendor/voltage/config/BoardConfigReservedSize.mk
+
 BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
-BOARD_SUPER_PARTITION_SIZE := 9663676416
+BOARD_SUPER_PARTITION_SIZE := 11811160064
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -170,11 +171,6 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
-
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 94371840
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 94371840
-BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 94371840
-BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 94371840
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product

@@ -416,6 +416,9 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayGarnetXIG05 \
     SystemUIOverlayGarnet \
     TelephonyOverlayGarnet \
+    LineageSDKOverlayGarnet \
+    LineageSettingsOverlayGarnet \
+    LineageSystemUIOverlayGarnet \
     WifiOverlayGarnet \
     WifiOverlayGarnetPoco \
     WifiOverlayGarnetRedmi \
@@ -609,7 +612,7 @@ PRODUCT_PACKAGES += \
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
--include vendor/aosp-priv/keys/keys.mk
+-include vendor/voltage-priv/keys/keys.mk
 
 # Viper4AndroidFX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
