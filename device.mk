@@ -220,10 +220,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils.vendor
-
 # Graphics
 PRODUCT_PACKAGES += \
     libgui_vendor
