@@ -163,10 +163,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Configstore
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
@@ -412,9 +408,6 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayGarnetXIG05 \
     SystemUIOverlayGarnet \
     TelephonyOverlayGarnet \
-    LineageSDKOverlayGarnet \
-    LineageSettingsOverlayGarnet \
-    LineageSystemUIOverlayGarnet \
     WifiOverlayGarnet \
     WifiOverlayGarnetPoco \
     WifiOverlayGarnetRedmi \
@@ -607,3 +600,5 @@ $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
 # Viper4AndroidFX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+-include vendor/aosp-priv/keys/keys.mk

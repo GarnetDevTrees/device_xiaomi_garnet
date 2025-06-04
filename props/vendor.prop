@@ -155,11 +155,13 @@ debug.sf.hw=0
 debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.enable_egl_image_tracker=1
-debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.early.app.duration=16500000
+debug.sf.early.sf.duration=16000000
+debug.sf.earlyGl.app.duration=21000000
+debug.sf.earlyGl.sf.duration=13500000
+debug.sf.late.app.duration=20500000
+debug.sf.late.sf.duration=10500000
+debug.sf.use_phase_offsets_as_durations=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.set_idle_timer_ms=3000
 debug.sf.treat_170m_as_sRGB=1
@@ -186,10 +188,6 @@ vendor.gralloc.disable_ubwc=0
 # HWUI
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
-persist.sys.ui.hw=1
-persist.sys.ui.hw2=1
-persist.sys.ui.render=1
-persist.sys.hwui.disable_vsync=true
 
 # Keystore
 ro.hardware.keystore_desede=true
