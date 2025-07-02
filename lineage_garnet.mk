@@ -11,16 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# VoltageOS Flags
+# CrDroidROM Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-CUSTOM_BUILD_TYPE := OFFICIAL
-CUSTOM_MAINTAINER := senseideveloper
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-WITH_GMS := false
 
 # Reduce overdraw debugging to improve performance
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -44,7 +38,7 @@ ro.HOME_APP_ADJ=1
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-PRODUCT_NAME := voltage_garnet
+PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

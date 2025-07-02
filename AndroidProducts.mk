@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_garnet.mk
+    $(LOCAL_DIR)/lineage_garnet.mk

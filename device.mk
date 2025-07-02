@@ -163,10 +163,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Configstore
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
@@ -612,7 +608,7 @@ PRODUCT_PACKAGES += \
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
--include vendor/voltage-priv/keys/keys.mk
+-include vendor/lineage-priv/keys/keys.mk
 
 # LiteGApps
 -include vendor/gapps/arm64/arm64-vendor.mk
