@@ -28,7 +28,7 @@
         android:key="saturation"
         android:max="200"
         android:min="0"
-        android:defaultValue="100"
+        android:defaultValue="118"
         settings:continuousUpdates="true" />
 
     <com.android.settingslib.widget.FooterPreference
