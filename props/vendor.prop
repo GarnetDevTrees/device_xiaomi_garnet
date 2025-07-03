@@ -200,14 +200,10 @@ debug.stagefright.c2inputsurface=-1
 debug.sdm.support_writeback=0
 ro.media.xml_variant.profiles=_parrot_v0
 
-# PASR
-vendor.pasr.activemode.enabled=false
-
 # DisplayFeature
 persist.sys.sf.native_mode=268
 
 # Perf
-ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 vendor.perf.framepacing.enable=1
 
