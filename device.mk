@@ -62,8 +62,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
-    audio.usb.default \
-    sound_trigger.primary.parrot
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     agmcap \
