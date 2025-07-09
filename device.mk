@@ -7,6 +7,8 @@
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
+$(call inherit-product, packages/apps/JamesDSPManager/config.mk)
+
 # Inherit Basic Call Recorder (BCR)
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
@@ -611,6 +613,3 @@ $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
 # LiteGApps
 -include vendor/gapps/arm64/arm64-vendor.mk
-
-# Viper4AndroidFX
-$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
