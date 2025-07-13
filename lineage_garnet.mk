@@ -15,6 +15,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # CrDroidROM Flags
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := true
 
 # Reduce overdraw debugging to improve performance
 PRODUCT_PROPERTY_OVERRIDES += \
