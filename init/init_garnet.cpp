@@ -5,6 +5,7 @@
 
 #include <vector>
 
+#include <android-base/logging.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -128,6 +129,12 @@ void vendor_load_properties() {
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
 
+    property_override("service.adb.root", "1");
+    property_override("ro.adb.secure", "0");
+    property_override("ro.debuggable", "1");
+    property_override("ro.force.debuggable", "1");
+    property_override("persist.sys.usb.config", "adb");
+    property_override("sys.usb.config", "adb");
     property_override("bluetooth.device.default_name", marketname.c_str());
     property_override("ro.boot.product.hardware.sku", region.c_str());
     property_override("ro.build.description", description.c_str());
