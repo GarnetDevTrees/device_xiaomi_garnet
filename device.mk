@@ -7,11 +7,6 @@
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
-$(call inherit-product-if-exists, packages/apps/JamesDSPManager/config.mk)
-
-# Inherit Basic Call Recorder (BCR)
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -76,6 +71,7 @@ PRODUCT_PACKAGES += \
     libagmclient \
     libagmmixer \
     libbatterylistener \
+	libaudioroute-v34 \
     libfmpal \
     libpalclient \
     libqcompostprocbundle \
@@ -610,6 +606,3 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
 -include vendor/lineage-priv/keys/keys.mk
-
-# LiteGApps
--include vendor/gapps/arm64/arm64-vendor.mk
