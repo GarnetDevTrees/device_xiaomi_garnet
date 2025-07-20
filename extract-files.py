@@ -86,10 +86,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'=(\d+)>', r'="\1">'),
     ('vendor/etc/init/hw/init.batterysecret.rc', 'vendor/etc/init/hw/init.mi_thermald.rc', 'vendor/etc/init/hw/init.qti.kernel.rc'): blob_fixup()
         .regex_replace(r'on charger', r'on property:init.svc.vendor.charger=running'),
-    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace(r'.+dolby.+\n', ''),
-    'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
-        .regex_replace(r'.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     'vendor/etc/perf/commonresourceconfigs.xml': blob_fixup()
         .regex_replace('.+<Minor OpcodeValue="0x16" Node="/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:prime/min_freq" />+\n', '')
         .regex_replace('.+<Minor OpcodeValue="0x12" Node="/sys/devices/system/cpu/bus_dcvs/LLCC/190b6400.qcom,bwmon-llcc/max_freq" />+\n', '')
@@ -102,6 +98,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('audio.primary.parrot.so', 'audio.primary.garnet.so'),         
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+        ('vendor/lib64/c2.dolby.avc.dec.so', 'vendor/lib64/c2.dolby.avc.sec.dec.so', 'vendor/lib64/c2.dolby.hevc.dec.so', 'vendor/lib64/c2.dolby.hevc.sec.dec.so'): blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
+        ('vendor/bin/hw/dolbycodec2'): blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
+        ('vendor/lib64/c2.dolby.client.so'): blob_fixup()
+        .add_needed('libcodec2_hidl_shim.so'),
 }  # fmt: skip
 
 # Module definition

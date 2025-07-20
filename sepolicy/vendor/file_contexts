@@ -77,6 +77,9 @@
 # Touchfeature
 /dev/xiaomi-touch u:object_r:touchfeature_device:s0
 
+# Media
+/vendor/bin/hw/dolbycodec2 u:object_r:mediacodec_exec:s0
+
 # Data files
 /data/vendor/dolby(/.*)?                                                                                   u:object_r:vendor_data_file:s0
 
