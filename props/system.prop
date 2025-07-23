@@ -44,6 +44,17 @@ vendor.post_boot.parsed=1s
 ro.min.fling_velocity=70
 ro.max.fling_velocity=21000
 
+# Ram Management
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
@@ -59,6 +70,10 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=false
 
 # Silence minksocket logs
 persist.log.tag.minksocket=S
