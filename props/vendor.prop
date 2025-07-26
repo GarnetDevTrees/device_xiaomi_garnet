@@ -223,7 +223,6 @@ ro.vendor.radio.build_profile=u-stable
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
-pm.dexopt.bg-dexopt=everything
 
 # RCS
 persist.vendor.rcs.singlereg.feature=1
