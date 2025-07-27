@@ -86,6 +86,9 @@ DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/hidl/manifest.xml \
     hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
 
+ODM_MANIFEST_SKUS += IN
+ODM_MANIFEST_IN_FILES := $(DEVICE_PATH)/configs/hidl/manifest_nonfc.xml
+
 $(foreach sku, CN GL JP, \
     $(eval ODM_MANIFEST_SKUS += $(sku)) \
     $(eval ODM_MANIFEST_$(sku)_FILES += \

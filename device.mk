@@ -411,10 +411,8 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    libchrome.vendor \
-    nqnfcinfo
+    android.hardware.nfc-service.nxp \
+    com.android.nfc_extras
 
 $(foreach sku, CN GL JP, \
     $(eval PRODUCT_COPY_FILES += \
