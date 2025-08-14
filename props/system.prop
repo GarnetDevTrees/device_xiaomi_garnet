@@ -9,6 +9,7 @@ ro.vendor.qti.va_aosp.support=1
 
 # Graphics
 debug.sf.disable_backpressure=1
+ro.setupwizard.mode=DISABLED
 
 # Blur
 ro.sf.blurs_are_expensive=0
