@@ -11,11 +11,11 @@
 <mixer>
     <ctl name="HPHL Volume" value="18" />
     <ctl name="HPHR Volume" value="18" />
-    <ctl name="TX_DEC0 Volume" value="95" />
-    <ctl name="TX_DEC1 Volume" value="95" />
-    <ctl name="TX_DEC2 Volume" value="95" />
-    <ctl name="TX_DEC3 Volume" value="95" />
-    <ctl name="TX_DEC4 Volume" value="95" />
+    <ctl name="TX_DEC0 Volume" value="84" />
+    <ctl name="TX_DEC1 Volume" value="84" />
+    <ctl name="TX_DEC2 Volume" value="84" />
+    <ctl name="TX_DEC3 Volume" value="84" />
+    <ctl name="TX_DEC4 Volume" value="84" />
     <ctl name="ADC1 Volume" value="6" />
     <ctl name="ADC2 Volume" value="6" />
     <ctl name="ADC3 Volume" value="6" />
@@ -103,7 +103,7 @@
     </path>
 
     <path name="headset-mic">
-        <ctl name="TX_DEC0 Volume" value="95" />
+        <ctl name="TX_DEC0 Volume" value="84" />
         <path name="amic2" />
         <ctl name="ADC2 Volume" value="9" />
     </path>
@@ -201,7 +201,7 @@
     </path>
 
     <path name="ultrasound-mic">
-         <ctl name="TX_DEC4 Volume" value="95" />
+         <ctl name="TX_DEC4 Volume" value="84" />
         <ctl name="TX DEC4 MUX" value="SWR_MIC" />
         <ctl name="TX SMIC MUX4" value="SWR_MIC5" />
         <ctl name="TX_AIF2_CAP Mixer DEC4" value="1" />
