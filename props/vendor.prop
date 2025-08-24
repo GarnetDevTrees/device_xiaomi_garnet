@@ -200,7 +200,6 @@ debug.stagefright.c2inputsurface=-1
 debug.sdm.support_writeback=0
 ro.media.xml_variant.profiles=_parrot_v0
 
-<<<<<<< HEAD
 # DisplayFeature
 persist.sys.sf.native_mode=268
 
