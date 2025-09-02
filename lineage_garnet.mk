@@ -15,6 +15,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # CrDroidROM Flags
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_MATLOG := false
 WITH_GMS := false
 
 # Reduce overdraw debugging to improve performance
