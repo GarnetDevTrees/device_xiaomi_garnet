@@ -194,6 +194,12 @@
         <path name="handset-stereo-dmic-ef" />
     </path>
 
+    <!--ultrasound begin-->
+    <path name="ultrasound-handset">
+        <ctl name="aw_dev_0_prof"  value="Music" />
+        <ctl name="aw_dev_0_switch" value="Enable" />
+    </path>
+
     <path name="ultrasound-mic">
          <ctl name="TX_DEC4 Volume" value="84" />
         <ctl name="TX DEC4 MUX" value="SWR_MIC" />
