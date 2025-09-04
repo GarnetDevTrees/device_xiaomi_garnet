@@ -580,3 +580,6 @@ PRODUCT_PACKAGES += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
+
+# LiteGApps
+-include vendor/gapps/arm64/arm64-vendor.mk
